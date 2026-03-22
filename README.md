@@ -13,3 +13,12 @@ For the first version, the tool focuses on:
 - Read source files from a folder (for example, RPG or CL members exported to the file system).
 - Look for simple call statements (like `CALL` or `CALLP`).
 - Produce a JSON file that maps each program to the list of programs it calls.
+
+## Quick test (local)
+Once you clone the repository on your machine:
+
+```bash
+python -m ibmi_legacy_map ./samples/src ./output/map.json
+```
+
+This will scan the sample files and create `./output/map.json` with a simple call map.
