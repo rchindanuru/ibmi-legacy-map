@@ -33,3 +33,12 @@ Before modernizing an IBM i application, teams often spend a lot of time just un
 
 `ibmi-legacy-map` gives a quick, scriptable way to see these relationships in one place.
 You can use the JSON output as a starting point for architecture reviews, API planning, and impact analysis.
+
+## Example: using it on a real codebase
+
+1. Export your RPG/CL source members from IBM i to a folder (for example, using CPYTOSTMF or similar).
+2. Run `ibmi-legacy-map` on that folder to produce a JSON file.
+3. Open the JSON to:
+   - Find heavily used programs (called by many others).
+   - Decide which programs to wrap as APIs first.
+   - See which areas of the system will be touched by a change.
