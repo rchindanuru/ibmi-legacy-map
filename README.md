@@ -22,3 +22,14 @@ python -m ibmi_legacy_map ./samples/src ./output/map.json
 ```
 
 This will scan the sample files and create `./output/map.json` with a simple call map.
+
+
+## Why this matters for modernization
+
+Before modernizing an IBM i application, teams often spend a lot of time just understanding:
+
+- Which programs call which other programs.
+- Which parts of the system are most central and risky to touch.
+
+`ibmi-legacy-map` gives a quick, scriptable way to see these relationships in one place.
+You can use the JSON output as a starting point for architecture reviews, API planning, and impact analysis.
