@@ -1,3 +1,4 @@
+_Status: v0.1 – usable for small and medium codebases._
 import json
 import sys
 from collections import Counter
